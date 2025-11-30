@@ -15,7 +15,7 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.z = 6;
 
 //Partículas como fondo dinámico
-const particlesCount = 4000;
+const particlesCount = 2000;
 const positions = new Float32Array(particlesCount * 3);
 for (let i = 0; i < particlesCount; i++) {
   const i3 = i * 3;

@@ -176,3 +176,32 @@ footer {
   animation: glow 2s infinite alternate ease-in-out;
   pointer-events: none;
 }
+
+/* Mensaje oculto por defecto */
+#mobile-warning {
+	display: none;
+	color: #ffffff;
+	font-size: 1.3rem;
+	text-align: center;
+	padding: 20px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	line-height: 1.4;
+}
+
+/* Cuando la pantalla es pequeña (puedes ajustar el ancho) */
+@media (max-width: 800px) {
+
+	/* Oculta todo el contenido */
+	#desktop-content {
+		display: none !important;
+	}
+
+	/* Muestra el mensaje */
+	#mobile-warning {
+		display: block !important;
+	}
+}
